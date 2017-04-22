@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.crys.calculadora.CalculadoraActivity">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digite o primeiro número:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintVertical_bias="0.032"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/ednumero1"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="54dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digite o segundo número:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="114dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/ednumero1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/ednumero2"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="150dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/btsomar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="218dp"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/ednumero2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/btsubitrair"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_alignTop="@+id/btsomar"
+            android:layout_toRightOf="@+id/btsomar"
+            android:layout_toEndOf="@+id/btsomar" />
+        <Button
+            android:id="@+id/btmultiplicar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_alignBaseline="@+id/btsubitrair"
+            android:layout_alignBottom="@+id/btsubitrair"
+            android:layout_toRightOf="@+id/btsubitrair"
+            android:layout_toEndOf="@+id/btsubitrair" />
+        <Button
+            android:id="@+id/btDividir"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_alignBaseline="@+id/btmultiplicar"
+            android:layout_alignBottom="@+id/btmultiplicar"
+            android:layout_toRightOf="@+id/btmultiplicar"
+            android:layout_toEndOf="@+id/btmultiplicar" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Developer by Crystyano Almeida"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
